@@ -1,8 +1,9 @@
 import React from 'react';
 import './Translate.css';
 
-import ToggleButton from 'react-toggle-button';
+//import ToggleButton from 'react-toggle-button';
 import Speech from './TranslateBuild/Speech';
+//import SpeechToText from './TranslateBuild/SpeechToText';
 
 
 
