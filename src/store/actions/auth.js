@@ -20,7 +20,7 @@ export const authFail = (error) => {
     error: error,
   };
 };
-
+//react guide 326/
 export const auth = (email, password) => {
   return (dispatch) => {
     dispatch(authStart());
