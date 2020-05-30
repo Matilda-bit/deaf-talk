@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
 
-import Layout from "./components/Layout/Layout";
+import Layout from "./hoc/Layout/Layout";
 import Translate from "./components/Translate/Translate";
 import Auth from "./containers/Auth/Auth";
 import "./App.css";
@@ -13,6 +13,7 @@ class App extends Component {
         <Layout>
           <Switch>
             <Route path="/auth" component={Auth} />
+            <Route path="/translate" component={Translate} />
           </Switch>
         </Layout>
       </div>
