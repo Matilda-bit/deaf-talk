@@ -21,7 +21,7 @@ export const authFail = (error) => {
   };
 };
 //react guide 326/
-export const auth = (email, password) => {
+export const auth = (email, password, isSignup) => {
   return (dispatch) => {
     dispatch(authStart());
     const authData = {
@@ -31,7 +31,10 @@ export const auth = (email, password) => {
     };
     let url =
       "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyAamCKpRdl00cuJ5T5wqyHTnBJOybBkNTw";
-
+    if (!isSignup) {
+      url =
+        "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyB5cHT6x62tTe-g27vBDIqWcwQWBSj3uiY";
+    }
     axios
       .post(url, authData)
       .then((response) => {
