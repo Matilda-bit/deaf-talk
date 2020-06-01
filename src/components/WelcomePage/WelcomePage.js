@@ -1,44 +1,38 @@
 import React, { Component } from "react";
-import Button from "@material-ui/core/Button";
-
-
+import Button from "../../components/UI/Button/Button";
 
 class WelcomePage extends Component {
-
-
   render() {
-
     return (
       <div style={{ padding: 10 }}>
-      <div className="row">
-            <div className="col-75">
-              <div className="container">
-                <div className="row">
-                  <div className="col-50">
-                    <h3>Welcome Page</h3>
-                    <label htmlFor="lesson"><i className="fa fa-user" /> Lets start your first lesson</label>
-
-                  </div>
-
+        <div className="row">
+          <div className="col-75">
+            <div className="container">
+              <div className="row">
+                <div className="col-50">
+                  <h3>Welcome Page</h3>
+                  <label htmlFor="lesson">
+                    <i className="fa fa-user" /> Lets start your first lesson
+                  </label>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
         <div
           style={{
             color: "#504F5A",
             marginLeft: 5,
             marginTop: 50,
-            fontSize: 22
+            fontSize: 22,
           }}
-        >
-        </div>
+        ></div>
         <Button
           color="secondary"
           variant="outlined"
           onClick={() => {
-            console.log("here")
+            console.log("here");
           }}
           style={{ margin: 5, marginTop: 30 }}
         >
