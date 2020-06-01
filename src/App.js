@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 
 import Layout from "./hoc/Layout/Layout";
 import Translate from "./components/Translate/Translate";
+import WelcomePage from "./components/WelcomePage/WelcomePage";
 import Auth from "./containers/Auth/Auth";
 import "./App.css";
 
@@ -14,6 +15,7 @@ class App extends Component {
           <Switch>
             <Route path="/auth" component={Auth} />
             <Route path="/translate" component={Translate} />
+            <Route path="/WelcomePage" component={WelcomePage} />
           </Switch>
         </Layout>
       </div>
