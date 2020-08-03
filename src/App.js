@@ -5,12 +5,12 @@ import Layout from "./hoc/Layout/Layout";
 import Translate from "./components/Translate/Translate";
 import WelcomePage from "./components/WelcomePage/WelcomePage";
 import Auth from "./containers/Auth/Auth";
-import "./App.css";
+import classes from "./App.css";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className={classes.App}>
         <Layout>
           <Switch>
             <Route path="/auth" component={Auth} />
