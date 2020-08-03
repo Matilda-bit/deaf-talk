@@ -1,0 +1,8 @@
+.Container {
+  margin-top: 30px;
+  flex-direction: column;
+}
+
+.Text {
+  text-align: center;
+}
