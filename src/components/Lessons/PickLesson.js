@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import Button from "@material-ui/core/Button";
+import cartImage1 from "../../components/Images/letter.png";
+import cartImage2 from "../../components/Images/number.png";
 
 
 
-class WelcomePage extends Component {
+class PickLesson extends Component {
 
 
   render() {
@@ -15,8 +17,7 @@ class WelcomePage extends Component {
               <div className="container">
                 <div className="row">
                   <div className="col-50">
-                    <h3>Welcome Page</h3>
-                    <label htmlFor="lesson"><i className="fa fa-user" /> Lets start your first lesson</label>
+                    <label htmlFor="lesson"><i className="fa fa-user" /> Please pick a lesson</label>
 
                   </div>
 
@@ -34,20 +35,32 @@ class WelcomePage extends Component {
           }}
         >
         </div>
+        <img src={cartImage1} alt={"image1"}/>
         <Button
           color="secondary"
           variant="outlined"
           onClick={() => {
-            this.props.history.push("/PickLesson");
+            this.props.history.push("/Lessons1");
           }}
           style={{ margin: 5, marginTop: 30 }}
         >
-          Enter
+          Enter letters lesson
+        </Button>
+        <img src={cartImage2} alt={"image2"}/>
+        <Button
+          color="secondary"
+          variant="outlined"
+          onClick={() => {
+            this.props.history.push("/Lessons2");
+          }}
+          style={{ margin: 40, marginTop: 65 }}
+        >
+          Enter numbers lesson
         </Button>
       </div>
     );
   }
 }
 
-const WP = WelcomePage;
-export default WP;
+const PL = PickLesson;
+export default PL;

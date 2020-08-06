@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import classes from "./Speech.css";
+import "./Speech.css";
 //import { SpeechRecognition, webkitSpeechRecognition } from 'react-speech-recognition';
 //import SpeechRecognition from 'react-speech-recognition';
 import webkitSpeechRecognition from "react-speech-recognition";
@@ -88,17 +88,17 @@ class Speech extends Component {
 
   render() {
     return (
-      <div className={classes.container}>
+      <div className="container">
         <button
           id="microphone-btn"
-          className={classes.button}
+          className="button"
           onClick={() => this.toggleListen}
         >
           Click to speak
         </button>
         <br />
-        <div id="interim" className={classes.interim}></div>
-        <div id="final" className={classes.final}></div>
+        <div id="interim" className="interim"></div>
+        <div id="final" className="final"></div>
       </div>
     );
   }
