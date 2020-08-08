@@ -12,6 +12,7 @@ import Auth from "./containers/Auth/Auth";
 import Home from "./components/HomePage/HomePage";
 import Logout from "./containers/Auth/Logout/Logout";
 import Signup from "./containers/Auth/Signup/Signup";
+import AboutUs from "./components/AboutUsPage/AboutUs";
 
 //import * as actions from "./store/actions/index";
 //import "./App.css";
@@ -25,12 +26,12 @@ class App extends Component {
   render() {
     let routes = (
       <Switch>
-        <Route path="/auth" component={Auth} />
-        <Route path="/WelcomePage" component={WelcomePage} />
+        {" "}
         <Route path="/signup" component={Signup} />
+        <Route path="/WelcomePage" component={WelcomePage} />
+        <Route path="/auth" component={Auth} />
+        <Route path="/about" component={AboutUs} />
         <Route path="/" component={WelcomePage} />
-        <Route path="/PickLesson" component={PickLesson} />
-
         <Redirect to="/" />
       </Switch>
     );
@@ -38,6 +39,7 @@ class App extends Component {
     if (this.props.isAuthenticated) {
       routes = (
         <Switch>
+          <Route path="/signup" component={Signup} />
           <Route path="/home" component={Home} />
           <Route path="/translate" component={Translate} />
 
@@ -45,7 +47,7 @@ class App extends Component {
           <Route path="/Lessons2" component={Lessons2} />
           <Route path="/PickLesson" component={PickLesson} />
           <Route path="/logout" component={Logout} />
-          <Route path="/signup" component={Signup} />
+
           <Route path="/" exact component={Home} />
           <Redirect to="/" />
         </Switch>
