@@ -921,7 +921,7 @@ class Lessons1 extends Component {
           <Button
             color="secondary"
             variant="outlined"
-            onClick={() => {
+            clicked={() => {
               this.props.history.push("/PickLesson");
             }}
             style={{ margin: 5, marginTop: 30 }}
