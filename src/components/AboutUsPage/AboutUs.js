@@ -12,7 +12,7 @@ class AboutUs extends Component {
             language in Israel ISL.
           </h2>
           <h2>Developed by - a small team of students from the SCE.</h2>{" "}
-          <h2>Polina Ovras | Ilya | Warda</h2>
+          <h2>Polina Ovras | Ilya Kampal | Warda Sheik Yousef</h2>
         </div>
       </div>
     );
