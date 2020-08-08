@@ -16,9 +16,10 @@ class WelcomePage extends Component {
         <div className={classes.Container}>
           <div className={classes.Text}>
             {" "}
-            <h1>
+            <h1>Welcome to Deaf Talk!</h1>
+            <h2>
               Here you can learn sing language anytime and absolutely free!
-            </h1>
+            </h2>
           </div>
 
           <Button
