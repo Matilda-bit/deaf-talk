@@ -6,7 +6,7 @@ import NavigationItem from "./NavigationItem/NavigationItem";
 const SignedInLinks = () => (
   <ul className={classes.NavigationItems}>
     <NavigationItem link="/home">My Home</NavigationItem>
-    <NavigationItem link="/class">My Class</NavigationItem>
+    <NavigationItem link="/PickLesson">My Class</NavigationItem>
     <NavigationItem link="/translate">Translate</NavigationItem>
     <NavigationItem link="/about">About Us</NavigationItem>
     <NavigationItem link="/Logout">Log Out</NavigationItem>
