@@ -7,7 +7,6 @@ class HomePage extends Component {
   render() {
     return (
       <div className={classes.Container}>
-        <Icon />
         <h1>Your Name</h1>
         <Button
           clicked={() => {
@@ -21,6 +20,9 @@ class HomePage extends Component {
     );
   }
 }
+
+//<Icon />
+
 // console.log("click!");
 // this.props.history.push("/PickLesson")
 // <div className={classes.TextBox}>
