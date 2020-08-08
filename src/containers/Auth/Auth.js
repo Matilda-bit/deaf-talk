@@ -139,10 +139,17 @@ class Auth extends Component {
     let headerText = this.state.isSignup ? "SignUp" : "SignIn";
     let authRedirect = null;
     if (this.props.isAuthenticated) {
-      if (this.state.isSignup) {
-        authRedirect = <Redirect to="/signup" />;
-      } else authRedirect = <Redirect to="/" />;
+      authRedirect = <Redirect to="/" />;
+      // if (this.state.isSignup) {
+      //   authRedirect = <Redirect to="/" />;
+      // } else authRedirect = <Redirect to="/" />;
     }
+    // if (this.props.isAuthenticated) {
+    //   if (this.state.isSignup) {
+    //     this.props.history.push("/signup");
+    //     //authRedirect =
+    //   } else <Redirect to="/" />;
+    // }
     // if (this.props.isAuthenticated) {
     //   authRedirect = <Redirect to={this.props.authRedirectPath} />;
     // }
