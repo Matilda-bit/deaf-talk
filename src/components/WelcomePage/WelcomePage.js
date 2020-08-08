@@ -1,53 +1,46 @@
 import React, { Component } from "react";
-import Button from "@material-ui/core/Button";
-
-
+//import { useHistory } from "react-router-dom";
+import Button from "../UI/Button/Button";
+import classes from "./WelcomePage.css";
 
 class WelcomePage extends Component {
-
+  // onSubmit = () => {
+  //   //let history = useHistory();
+  //   //this.props.history.push("/PickLesson");
+  //   this.props.history.push("/translate");
+  // };
 
   render() {
-
     return (
       <div style={{ padding: 10 }}>
-      <div className="row">
-            <div className="col-75">
-              <div className="container">
-                <div className="row">
-                  <div className="col-50">
-                    <h3>Welcome Page</h3>
-                    <label htmlFor="lesson"><i className="fa fa-user" /> Lets start your first lesson</label>
-
-                  </div>
-
-                </div>
-              </div>
-            </div>
+        <div className={classes.Container}>
+          <div className={classes.Text}>
+            {" "}
+            <h1>
+              Here you can learn sing language anytime and absolutely free!
+            </h1>
           </div>
 
-        <div
-          style={{
-            color: "#504F5A",
-            marginLeft: 5,
-            marginTop: 50,
-            fontSize: 22
-          }}
-        >
+          <Button
+            // variant="success"
+            btnType="Success"
+            clicked={() => {
+              this.props.history.push("/auth");
+            }}
+          >
+            Let’s start!
+          </Button>
         </div>
-        <Button
-          color="secondary"
-          variant="outlined"
-          onClick={() => {
-            this.props.history.push("/PickLesson");
-          }}
-          style={{ margin: 5, marginTop: 30 }}
-        >
-          Enter
-        </Button>
       </div>
     );
   }
 }
-
-const WP = WelcomePage;
-export default WP;
+// this.props.history.push({ path: "/PickLesson" });
+// <Button
+//             btnType="Success"
+//             onClick={this.onSubmit}
+//             style={{ margin: 5, marginTop: 30 }}
+//           >
+//             Enter
+//           </Button>
+export default WelcomePage;

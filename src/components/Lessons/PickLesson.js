@@ -1,41 +1,36 @@
 import React, { Component } from "react";
-import Button from "@material-ui/core/Button";
+//import Button from "@material-ui/core/Button";\
+import Button from "../UI/Button/Button";
 import cartImage1 from "../../components/Images/letter.png";
 import cartImage2 from "../../components/Images/number.png";
 
-
-
 class PickLesson extends Component {
-
-
   render() {
-
     return (
       <div style={{ padding: 10 }}>
-      <div className="row">
-            <div className="col-75">
-              <div className="container">
-                <div className="row">
-                  <div className="col-50">
-                    <label htmlFor="lesson"><i className="fa fa-user" /> Please pick a lesson</label>
-
-                  </div>
-
+        <div className="row">
+          <div className="col-75">
+            <div className="container">
+              <div className="row">
+                <div className="col-50">
+                  <label htmlFor="lesson">
+                    <i className="fa fa-user" /> Please pick a lesson
+                  </label>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
         <div
           style={{
             color: "#504F5A",
             marginLeft: 5,
             marginTop: 50,
-            fontSize: 22
+            fontSize: 22,
           }}
-        >
-        </div>
-        <img src={cartImage1} alt={"image1"}/>
+        ></div>
+        <img src={cartImage1} alt={"image1"} />
         <Button
           color="secondary"
           variant="outlined"
@@ -46,7 +41,7 @@ class PickLesson extends Component {
         >
           Enter letters lesson
         </Button>
-        <img src={cartImage2} alt={"image2"}/>
+        <img src={cartImage2} alt={"image2"} />
         <Button
           color="secondary"
           variant="outlined"
